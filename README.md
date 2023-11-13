@@ -1,4 +1,7 @@
-**kotlinBuilder - Compilação e Execução Simplificadas de Kotlin**
+Entendi. Aqui está a versão atualizada do README, destacando a existência do instalador para Linux:
+
+```markdown
+# kotlinBuilder - Compilação e Execução Simplificadas de Kotlin
 
 O `kotlinBuilder` é um script em Bash que simplifica a compilação e execução de programas Kotlin diretamente da linha de comando, tornando o desenvolvimento em Kotlin mais acessível. Descubra como integrar facilmente o `kotlinBuilder` ao seu fluxo de trabalho:
 
@@ -36,4 +39,11 @@ O `kotlinBuilder` é um script em Bash que simplifica a compilação e execuçã
    - Clique em "OK" para fechar as janelas abertas.
    - Agora você pode executar o `kotlinBuilder` de qualquer lugar no prompt de comando.
 
+### Instalador para Linux:
+
+Também está disponível um instalador para Linux que simplifica a adição do `kotlinBuilder` ao seu PATH. Execute o script `Install_for_PATH_Linux.sh` incluído no repositório para uma instalação fácil.
+
 Simples assim! Agora, o `kotlinBuilder` pode ser executado globalmente em seu sistema, proporcionando uma experiência mais eficiente e sem complicações no desenvolvimento Kotlin.
+```
+
+Certifique-se de fornecer o link real para o script `Install_for_PATH_Linux.sh` no espaço reservado. Espero que isso atenda às suas expectativas!
