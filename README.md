@@ -44,6 +44,4 @@ O `kotlinBuilder` é um script em Bash que simplifica a compilação e execuçã
 Também está disponível um instalador para Linux que simplifica a adição do `kotlinBuilder` ao seu PATH. Execute o script `Install_for_PATH_Linux.sh` incluído no repositório para uma instalação fácil.
 
 Simples assim! Agora, o `kotlinBuilder` pode ser executado globalmente em seu sistema, proporcionando uma experiência mais eficiente e sem complicações no desenvolvimento Kotlin.
-```
 
-Certifique-se de fornecer o link real para o script `Install_for_PATH_Linux.sh` no espaço reservado. Espero que isso atenda às suas expectativas!
