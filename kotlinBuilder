@@ -1,22 +1,25 @@
 #!/bin/bash
+
 if [ "$#" -ne 1 ]; then
   echo "Uso: $0 <caminho_do_arquivo.kt>"
   exit 1
 fi
 
 arquivo_kotlin=$1
+nome_arquivo_sem_extensao=$(basename "$arquivo_kotlin" .kt)
 diretorio_kotlin=$(dirname "$arquivo_kotlin")
 
 mkdir -p "$diretorio_kotlin/buildKotlin"
 
-kotlinc "$arquivo_kotlin" -include-runtime -d "$diretorio_kotlin/buildKotlin/MeuPrograma.jar"
-echo "Compilação concluída. O arquivo JAR está em: $diretorio_kotlin/buildKotlin/MeuPrograma.jar"
+kotlinc "$arquivo_kotlin" -include-runtime -d "$diretorio_kotlin/buildKotlin/$nome_arquivo_sem_extensao.jar"
+echo "Compilação concluída. O arquivo JAR está em: $diretorio_kotlin/buildKotlin/$nome_arquivo_sem_extensao.jar"
+
 read -p "Deseja executar o arquivo JAR? (S/N): " resposta
 
 resposta=$(echo "$resposta" | tr '[:upper:]' '[:lower:]')
 
 if [ "$resposta" == "s" ] || [ "$resposta" == "sim" ]; then
-  java -jar "$diretorio_kotlin/buildKotlin/MeuPrograma.jar"
+  java -jar "$diretorio_kotlin/buildKotlin/$nome_arquivo_sem_extensao.jar"
 fi
-#Criado por VitorDevLinux
-#13-11-23 18:10:47
+# Criado por VitorDevLinux
+# 13-11-23 18:10:47
