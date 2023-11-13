@@ -1,34 +1,39 @@
-**kotlinBuilder - Compilação e Execução Simples de Kotlin**
+**kotlinBuilder - Compilação e Execução Simplificadas de Kotlin**
 
-O `kotlinBuilder` é um script em Bash que facilita a compilação e execução de programas Kotlin diretamente da linha de comando. Este script simplifica o processo em três etapas:
+O `kotlinBuilder` é um script em Bash que simplifica a compilação e execução de programas Kotlin diretamente da linha de comando, tornando o desenvolvimento em Kotlin mais acessível. Descubra como integrar facilmente o `kotlinBuilder` ao seu fluxo de trabalho:
 
 ### Como Funciona:
 
 1. **Fornecer o Caminho do Arquivo Kotlin:**
-   - Execute o script fornecendo o caminho completo do arquivo Kotlin desejado como argumento.
+   - Execute o script com o caminho do arquivo Kotlin como argumento.
    ```bash
    ./kotlinBuilder /caminho/do/seu/arquivo/Teste.kt
    ```
 
 2. **Compilação Automática:**
-   - O script cria um diretório `buildKotlin` no mesmo local do arquivo Kotlin.
-   - Compila o código-fonte Kotlin e gera um arquivo JAR no diretório `buildKotlin`.
+   - Cria o diretório `buildKotlin` no mesmo local do arquivo Kotlin.
+   - Compila o código-fonte Kotlin e gera um arquivo JAR em `buildKotlin`.
 
 3. **Execução Opcional:**
-   - Após a compilação, o script pergunta se você deseja executar o arquivo JAR.
-   - Responda com "S" ou "sim" para executar o programa Kotlin recém-compilado.
+   - Após a compilação, pergunta se deseja executar o arquivo JAR.
+   - Responda com "S" ou "sim" para executar o programa Kotlin.
 
-### Uso Rápido:
+### Uso Rápido (Adicionando ao PATH):
 
-1. Baixe o script: kotlinBuilder.
-2. Abra um terminal e navegue até o diretório do script.
-3. Forneça permissões de execução:
-   ```bash
-   chmod +x kotlinBuilder
-   ```
-4. Execute o script com o caminho do arquivo Kotlin desejado:
-   ```bash
-   ./kotlinBuilder /caminho/do/seu/arquivo/Teste.kt
-   ```
+1. **Baixe o script: kotlinBuilder.**
+2. **Linux e macOS:**
+   - Navegue até o diretório onde o script está localizado.
+   - Torne-o executável: `chmod +x ./kotlinBuilder`.
+   - Mova-o para um diretório incluído no PATH (por exemplo, `/usr/local/bin/`): `sudo mv ./kotlinBuilder /usr/local/bin/`.
+   - Execute de qualquer lugar: `kotlinBuilder /caminho/do/seu/arquivo/Teste.kt`.
+3. **Windows:**
+   - Navegue até o diretório onde o script está localizado.
+   - Copie o caminho do diretório (por exemplo, `C:\caminho\do\seu\script\`).
+   - Abra o Menu Iniciar, pesquise "Variáveis de Ambiente" e selecione "Editar as variáveis de ambiente do sistema".
+   - Clique em "Variáveis de Ambiente...".
+   - Na seção "Variáveis do Sistema", encontre e selecione a variável "Path" e clique em "Editar".
+   - Clique em "Novo" e cole o caminho do diretório do script.
+   - Clique em "OK" para fechar as janelas abertas.
+   - Agora você pode executar o `kotlinBuilder` de qualquer lugar no prompt de comando.
 
-Simples assim! O `kotlinBuilder` simplifica o fluxo de trabalho, tornando a compilação e execução de programas Kotlin uma tarefa fácil e direta.
+Simples assim! Agora, o `kotlinBuilder` pode ser executado globalmente em seu sistema, proporcionando uma experiência mais eficiente e sem complicações no desenvolvimento Kotlin.
